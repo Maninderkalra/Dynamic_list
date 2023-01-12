@@ -1,0 +1,13 @@
+<app-list-with-checkbox
+  [listData]="listData"
+  [lableBeforeCheck]="true"
+  [lableAfterCheck]="false"
+  [lableAfterCheckWithClass]="false"
+  (selectedItemEmitter)="itemClick($event)"
+></app-list-with-checkbox>
+
+<div class="" *ngIf="selectedItem">
+  <p>Selected Item:</p>
+  <span>Id: {{ selectedItem.id }}</span>
+  <span>Item: {{ selectedItem.item }}</span>
+</div>

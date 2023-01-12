@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let item of listData"
+          (click)="itemClick(item)"
+        >
+          <i class="fa {{ item.icon }}"></i>
+          <span>
+            {{ item.item }}
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

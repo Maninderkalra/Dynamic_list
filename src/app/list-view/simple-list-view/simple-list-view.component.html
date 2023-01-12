@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          (click)="itemClick(data)"
+          *ngFor="let data of listData"
+        >
+          <span>
+            {{ data.item }}
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

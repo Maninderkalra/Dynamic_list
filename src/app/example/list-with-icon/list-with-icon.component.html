@@ -1,0 +1,9 @@
+<app-simple-list-with-icon
+  [listData]="listData"
+  (selectedItemEmitter)="itemClick($event)"
+></app-simple-list-with-icon>
+
+<div class="" *ngIf="selectedItem">
+  <p>Selected Item:</p>
+  <span>{{ selectedItem.item }}</span>
+</div>
